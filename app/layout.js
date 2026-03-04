@@ -1,5 +1,6 @@
 // app/layout.js
 import Navbar from '../Components/header';
+import Footer from '../Components/footer';
 import VantaBackground from '../Components/background'
 import './globals.css'
 
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
         <main className="relative z-10">
           {children}
         </main>
+          <Footer />
       </body>
     </html>
   )
