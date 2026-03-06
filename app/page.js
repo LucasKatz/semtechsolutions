@@ -1,4 +1,7 @@
 import Navbar from "../Components/header";
+import ServicesPage from "./services/page";
+import ContactForm from "./contact/page";
+import About from "./info/page";
 
 export default function HomePage() {
   return (
@@ -7,26 +10,26 @@ export default function HomePage() {
 
       <main>
         {/* SECCIÓN INTRO (Ya la tienes) */}
-       <section id="intro" className="relative w-full h-screen flex items-center justify-center overflow-hidden">
-          
+        <section id="intro" className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+
           <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-            
+
             {/* Etiqueta pequeña arriba */}
-            <span className="block text-[#ff3f81] uppercase tracking-[0.3em] text-xs font-bold mb-4 animate-fade-in">
+            <span className="block text-[#ff3f81] bg-white uppercase tracking-[0.3em] text-xs font-bold mb-4 animate-fade-in">
               Soluciones Informáticas Especializadas
             </span>
 
             {/* Título Gigante */}
             <h1 className="text-4xl md:text-7xl font-bold text-white leading-tight mb-8">
-              Impulsamos tu <br />
+              Mantenimiento y <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff3f81] to-purple-400">
-                presencia digital.
+                consultoria informatica.
               </span>
             </h1>
 
             {/* Párrafo descriptivo */}
             <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-              Expertos en desarrollo de software y soporte técnico para llevar tu negocio al siguiente nivel.
+              "Soluciones IT sin complicaciones para todo tipo de organizaciones."
             </p>
 
             {/* Botones estilo Tyndale con Tailwind */}
@@ -51,26 +54,25 @@ export default function HomePage() {
 
         {/* SECCIÓN SERVICIOS */}
         <section id="services" className="relative w-full min-h-screen bg-[#23153c] py-24 px-6">
-            <div className="max-w-7xl mx-auto">
-                <h2 className="text-[#ff3f81] text-4xl font-bold mb-12">Nuestros Servicios</h2>
-                {/* Contenido de servicios aquí */}
-            </div>
+          <div className="max-w-7xl mx-auto">
+            <ServicesPage />
+          </div>
         </section>
 
         {/* SECCIÓN NOSOTROS */}
         <section id="info" className="relative w-full min-h-screen bg-black py-24 px-6">
-            <div className="max-w-7xl mx-auto">
-                <h2 className="text-[#ff3f81] text-4xl font-bold mb-12">Sobre Nosotros</h2>
-                {/* Contenido de info aquí */}
-            </div>
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-[#ff3f81] text-4xl font-bold mb-12">Sobre Nosotros</h2>
+            <About/>
+          </div>
         </section>
 
         {/* SECCIÓN CONTACTO */}
         <section id="contact" className="relative w-full min-h-screen bg-[#23153c] py-24 px-6">
-            <div className="max-w-7xl mx-auto">
-                <h2 className="text-[#ff3f81] text-4xl font-bold mb-12">Contacto</h2>
-                {/* Formulario aquí */}
-            </div>
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-[#ff3f81] text-4xl font-bold mb-12">Contacto</h2>
+            <ContactForm/>
+          </div>
         </section>
       </main>
     </div>
