@@ -29,7 +29,7 @@ const Footer = () => {
                         </h4>
                         <ul className="space-y-3">
                             <li>
-                                <a href="https://www.instagram.com/semtech.gaming?igsh=MWVhbXlocXVmdGx0dA=="
+                                <a href="https://www.instagram.com/semtech.soluciones?igsh=MWVhbXlocXVmdGx0dA=="
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-white hover:text-[#ff3f81] transition-colors text-sm">
