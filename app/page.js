@@ -16,7 +16,7 @@ export default function HomePage() {
           <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
 
             {/* Etiqueta pequeña arriba */}
-            <span className="block text-[#ff3f81] bg-white uppercase tracking-[0.3em] text-xs font-bold mb-4 animate-fade-in">
+            <span className="block text-[#ff3f81]  uppercase tracking-[0.3em] text-s font-bold mb-4 animate-fade-in">
               Soluciones Informáticas Especializadas
             </span>
 
