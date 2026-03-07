@@ -2,6 +2,7 @@ import Navbar from "../Components/header";
 import ServicesPage from "./services/page";
 import ContactForm from "./contact/page";
 import About from "./info/page";
+import Clients from "./clients/page";
 
 export default function HomePage() {
   return (
@@ -28,7 +29,7 @@ export default function HomePage() {
             </h1>
 
             {/* Párrafo descriptivo */}
-            <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+            <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed ">
               "Soluciones IT sin complicaciones para todo tipo de organizaciones."
             </p>
 
@@ -67,8 +68,15 @@ export default function HomePage() {
           </div>
         </section>
 
+{/* SECCIÓN CLIENTES */}
+           <section id="services" className="relative w-full min-h-screen bg-[#23153c] py-24 px-6">
+          <div className="max-w-7xl mx-auto">
+            <Clients />
+          </div>
+        </section>
+
         {/* SECCIÓN CONTACTO */}
-        <section id="contact" className="relative w-full min-h-screen bg-[#23153c] py-24 px-6">
+        <section id="contact" className="relative w-full min-h-screen bg-black py-24 px-6">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-[#ff3f81] text-4xl font-bold mb-12">Contacto</h2>
             <ContactForm/>
