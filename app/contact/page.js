@@ -54,11 +54,11 @@ const handleSubmit = (e) => {
 
     setIsSending(true);
 
-    // ESTO ES LO QUE TENÉS QUE COMPLETAR EN VSC:
-    const SERVICE_ID = 'service_1dj3hpu';   // Lo sacás de "Email Services"
-    const TEMPLATE_ID = 'template_g6nsvqa'; // Lo sacás de "Email Templates"
-    const PUBLIC_KEY = 'uhcyuRHeYyHPXFyjR';   // Lo sacás de "Account" -> "API Keys"
+  const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+  const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
+  
     emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
       .then(() => {
         toast.success("¡Mensaje enviado con éxito!", { theme: "dark" });
