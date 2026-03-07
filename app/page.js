@@ -24,7 +24,7 @@ export default function HomePage() {
             <h1 className="text-4xl md:text-7xl font-bold text-white leading-tight mb-8">
               Mantenimiento y <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff3f81] to-purple-400">
-                consultoria informatica.
+                consultoria informática.
               </span>
             </h1>
 
