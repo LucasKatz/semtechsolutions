@@ -22,10 +22,7 @@ const About = () => {
                   alt="Soluciones IT"
                   className="w-full h-full object-cover opacity-60 mix-blend-lighten group-hover:opacity-90 transition-opacity duration-500"
                 />
-                {/* Overlay decorativo (si no hay imagen aún) */}
-                <div className="absolute inset-0 flex items-center justify-center text-white/10 pointer-events-none">
-                  <span className="text-sm tracking-widest uppercase">Espacio para Imagen</span>
-                </div>
+                
               </div>
             </div>
 

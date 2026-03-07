@@ -63,13 +63,15 @@ export default function HomePage() {
         {/* SECCIÓN NOSOTROS */}
         <section id="info" className="relative w-full min-h-screen bg-black py-24 px-6">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-[#ff3f81] text-4xl font-bold mb-12">Sobre Nosotros</h2>
-            <About/>
+            <h2 className="text-[#ff3f81] text-4xl font-bold mb-12 text-center md:text-left">
+              Sobre Nosotros
+            </h2>
+            <About />
           </div>
         </section>
 
-{/* SECCIÓN CLIENTES */}
-           <section id="services" className="relative w-full min-h-screen bg-[#23153c] py-24 px-6">
+        {/* SECCIÓN CLIENTES */}
+        <section id="services" className="relative w-full min-h-screen bg-[#23153c] py-24 px-6">
           <div className="max-w-7xl mx-auto">
             <Clients />
           </div>
@@ -78,8 +80,10 @@ export default function HomePage() {
         {/* SECCIÓN CONTACTO */}
         <section id="contact" className="relative w-full min-h-screen bg-black py-24 px-6">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-[#ff3f81] text-4xl font-bold mb-12">Contacto</h2>
-            <ContactForm/>
+            <h2 className="text-[#ff3f81] text-4xl font-bold mb-12 text-center md:text-left">
+              Contacto
+            </h2>
+            <ContactForm />
           </div>
         </section>
       </main>
