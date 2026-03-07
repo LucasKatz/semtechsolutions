@@ -1,0 +1,11 @@
+:HL["/_next/static/chunks/75db9cb1085f7d5a.css","style"]
+:HL["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css","style"]
+:HL["/Puma.png","image"]
+:HL["/Shell.png","image"]
+:HL["/YPF.png","image"]
+:HL["/Axion.png","image"]
+:HL["/Caballero.png","image"]
+:HL["/Havanatur.png","image"]
+:HL["/Fusion.png","image"]
+:HL["/Libros.jpg","image"]
+0:{"buildId":"SfWOwIqLzqv7NZKQijIps","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"clients","paramType":null,"paramKey":"clients","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
