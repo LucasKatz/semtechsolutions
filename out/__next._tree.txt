@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/75db9cb1085f7d5a.css","style"]
+:HL["/_next/static/chunks/30419f93e4e31d65.css","style"]
 :HL["/_next/static/chunks/45042b2edb02f2ea.css","style"]
 :HL["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css","style"]
 :HL["/semtech.png","image"]
@@ -10,4 +10,4 @@
 :HL["/Havanatur.png","image"]
 :HL["/Fusion.png","image"]
 :HL["/Libros.jpg","image"]
-0:{"buildId":"SfWOwIqLzqv7NZKQijIps","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"v03uHfF1urn5ub5VhGvQ0","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
