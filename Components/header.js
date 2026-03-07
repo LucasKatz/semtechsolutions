@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
-import { FaUser } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa'; // Importamos los iconos
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
@@ -26,10 +26,9 @@ const Navbar = () => {
     }, [isMenuOpen]);
 
     return (
-        /* w-full y left-0 aseguran el ancho total. bg-white o el color que prefieras */
         <header className={`s-header w-full left-0 z-50 fixed bg-black shadow-sm ${isMenuOpen ? 'menu-is-open' : ''}`}>
 
-            <div className="s-header__block flex items-center w-full px-6 md:px-12 h-24"> {/* Aumenté h-20 a h-24 para que el logo de 150 respire */}
+            <div className="s-header__block flex items-center w-full px-6 md:px-12 h-24">
 
                 {/* 1. CONTENEDOR LOGO (Izquierda) */}
                 <div className="flex-1 flex justify-start">
@@ -38,8 +37,8 @@ const Navbar = () => {
                             <Image
                                 src="/logo.jpg"
                                 alt="Logo"
-                                width={150} // Valor solicitado
-                                height={150} // Valor solicitado
+                                width={150}
+                                height={150}
                                 priority
                                 className="object-contain"
                             />
@@ -55,10 +54,10 @@ const Navbar = () => {
                                 <Link
                                     href={link.href}
                                     className={`
-                            px-4 py-2 rounded-md transition-all duration-300
-                            hover:bg-gray-100 hover:shadow-inner
-                            ${pathname === link.href ? "font-bold text-purple-900 bg-gray-50" : "text-gray-600"}
-                        `}
+                                        px-4 py-2 rounded-md transition-all duration-300
+                                        hover:bg-gray-100/10 hover:text-white
+                                        ${pathname === link.href ? "font-bold text-purple-900 bg-gray-50" : "text-gray-400"}
+                                    `}
                                 >
                                     {link.label}
                                 </Link>
@@ -67,15 +66,22 @@ const Navbar = () => {
                     </ul>
                 </nav>
 
-                {/* 3. ESPACIADOR (Derecha) */}
-                {/* Este div vacío con flex-1 obliga al nav a quedarse en el centro real */}
-                <div className="flex-1 hidden md:flex justify-end">
-                    {/* Aquí puedes poner el icono de FaUser si quieres que se vea */}
+                {/* 3. REDES SOCIALES (Derecha - Solo Desktop) */}
+                <div className="flex-1 hidden md:flex justify-end items-center gap-6">
+                    <a href="https://www.linkedin.com/in/semtech-soluciones-53a9723b5" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#0077b5] transition-colors">
+                        <FaLinkedin size={22} />
+                    </a>
+                    <a href="https://www.instagram.com/semtech.soluciones?igsh=MWVhbXlocXVmdGx0dA==" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#e4405f] transition-colors">
+                        <FaInstagram size={22} />
+                    </a>
+                    <a href="https://www.facebook.com/share/1ArMujbRCq/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#1877f2] transition-colors">
+                        <FaFacebook size={22} />
+                    </a>
                 </div>
 
                 {/* BOTÓN HAMBURGUESA (Móvil) */}
                 <a
-                    className={`s-header__menu-toggle md:hidden ${isMenuOpen ? 'is-clicked' : ''}`}
+                    className={`s-header__menu-toggle md:hidden ${isMenuOpen ? 'is-clicked' : ''} ml-4`}
                     href="#0"
                     onClick={(e) => {
                         e.preventDefault();
@@ -90,11 +96,32 @@ const Navbar = () => {
                 </a>
             </div>
 
-            {/* MENÚ MÓVIL (Overlay cuando isMenuOpen es true) */}
+            {/* MENÚ MÓVIL (Overlay) */}
             <div className={`
                 md:hidden fixed inset-0 bg-white z-[40] transition-transform duration-500
                 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
             `}>
+                <button
+                    onClick={() => setIsMenuOpen(false)}
+                    className="absolute top-6 right-6 p-2 text-gray-800 hover:text-purple-900 transition-colors"
+                    aria-label="Cerrar menú"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="32"
+                        height="32"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    >
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+
                 <nav className="flex flex-col items-center justify-center h-full space-y-8">
                     {links.map((link) => (
                         <Link
@@ -106,7 +133,6 @@ const Navbar = () => {
                             {link.label}
                         </Link>
                     ))}
-
                 </nav>
             </div>
         </header>

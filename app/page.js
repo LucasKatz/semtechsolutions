@@ -24,13 +24,13 @@ export default function HomePage() {
             <h1 className="text-4xl md:text-7xl font-bold text-white leading-tight mb-8">
               Mantenimiento y <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff3f81] to-purple-400">
-                consultoria informática.
+                consultoria.
               </span>
             </h1>
 
             {/* Párrafo descriptivo */}
             <p className="text-white text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed ">
-              "Soluciones IT sin complicaciones para todo tipo de organizaciones."
+              "Soluciones sin complicaciones para todo tipo de organizaciones."
             </p>
 
             {/* Botones estilo Tyndale con Tailwind */}

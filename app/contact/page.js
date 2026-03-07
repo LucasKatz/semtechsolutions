@@ -32,7 +32,7 @@ const ContactForm = () => {
 
   const validate = () => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    
+
     if (!formData.nombre || !formData.email || !formData.asunto || !formData.mensaje) {
       toast.warn("Por favor, completa los campos obligatorios.");
       return false;
@@ -42,23 +42,23 @@ const ContactForm = () => {
       return false;
     }
     if (formData.telefono && formData.telefono.length < 8) {
-        toast.warn("El número de teléfono parece incompleto.");
-        return false;
+      toast.warn("El número de teléfono parece incompleto.");
+      return false;
     }
     return true;
   };
 
-const handleSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (!validate()) return;
 
     setIsSending(true);
 
-  const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-  const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-  const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+    const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-  
+
     emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
       .then(() => {
         toast.success("¡Mensaje enviado con éxito!", { theme: "dark" });
@@ -80,9 +80,9 @@ const handleSubmit = (e) => {
 
         <div className="bg-white/5 backdrop-blur-xl rounded-sm p-8 md:p-12 border border-white/10 shadow-2xl">
           <form onSubmit={handleSubmit} className="space-y-10">
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
-              
+
               {/* Nombre */}
               <div className="relative group">
                 <input name="nombre" type="text" placeholder=" " value={formData.nombre} onChange={handleChange}
@@ -106,7 +106,7 @@ const handleSubmit = (e) => {
                 <input name="telefono" type="tel" placeholder=" " value={formData.telefono} onChange={handleChange}
                   className="peer w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-[#ff3f81] transition-colors" />
                 <label className="absolute left-0 top-3 text-gray-500 uppercase tracking-widest text-xs font-bold transition-all peer-focus:-top-4 peer-focus:text-[#ff3f81] peer-[:not(:placeholder-shown)]:-top-4">
-                  Teléfono (Solo números)
+                  Teléfono
                 </label>
               </div>
 
@@ -120,7 +120,7 @@ const handleSubmit = (e) => {
               </div>
 
               {/* Asunto */}
-              <div className="relative group md:col-span-2">
+              <div className="relative group md:col-span-2 mb-4">
                 <input name="asunto" type="text" placeholder=" " value={formData.asunto} onChange={handleChange}
                   className="peer w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-[#ff3f81] transition-colors" />
                 <label className="absolute left-0 top-3 text-gray-500 uppercase tracking-widest text-xs font-bold transition-all peer-focus:-top-4 peer-focus:text-[#ff3f81] peer-[:not(:placeholder-shown)]:-top-4">
@@ -129,11 +129,19 @@ const handleSubmit = (e) => {
               </div>
             </div>
 
+
             {/* Mensaje */}
-            <div className="relative group pt-4">
-              <textarea name="mensaje" placeholder=" " rows="4" value={formData.mensaje} onChange={handleChange}
-                className="peer w-full bg-transparent border-b border-white/20 py-3 text-white focus:outline-none focus:border-[#ff3f81] transition-colors resize-none"></textarea>
-              <label className="absolute left-0 top-3 text-gray-500 uppercase tracking-widest text-xs font-bold transition-all peer-focus:-top-4 peer-focus:text-[#ff3f81] peer-[:not(:placeholder-shown)]:-top-4">
+            <div className="relative group pt-4"> 
+              <textarea
+                name="mensaje"
+                placeholder=" "
+                rows="4"
+                value={formData.mensaje}
+                onChange={handleChange}
+                className="peer w-full bg-transparent border border-white/20 rounded-sm p-3 text-white focus:outline-none focus:border-[#ff3f81] transition-colors resize-none text-sm"
+          
+              ></textarea>
+              <label className="absolute left-0 -top-4 text-gray-500 uppercase tracking-widest text-xs font-bold transition-all peer-focus:text-[#ff3f81] peer-[:not(:placeholder-shown)]:text-[#ff3f81]">
                 Mensaje *
               </label>
             </div>

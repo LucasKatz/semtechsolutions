@@ -1,0 +1,4 @@
+RewriteEngine On
+# Redirige la raíz a la carpeta out
+RewriteCond %{REQUEST_URI} !^/out/
+RewriteRule ^(.*)$ out/$1 [L]

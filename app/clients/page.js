@@ -35,7 +35,7 @@ const Clients = () => {
                             <img
                                 src={logo.src}
                                 alt={logo.alt}
-                                className={`max-w-full max-h-20 w-auto h-auto object-contain transition-transform duration-300 ${logo.scale}`}
+                                className={`max-w-full max-h-20 w-auto h-auto object-contain transition-transform duration-300 ${logo.scale} hover:scale-220`}
                             />
                         </a>
                     ))}

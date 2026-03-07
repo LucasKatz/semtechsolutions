@@ -16,7 +16,7 @@ const Footer = () => {
                             Dónde encontrarnos
                         </h4>
                         <p className="text-gray-400 leading-relaxed text-sm">
-                            Liniers<br />
+                            Ramón Falcón 5939<br />
                             CABA <br />
                             CP 1408
                         </p>
