@@ -29,7 +29,7 @@ export default function HomePage() {
             </h1>
 
             {/* Párrafo descriptivo */}
-            <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed ">
+            <p className="text-white text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed ">
               "Soluciones IT sin complicaciones para todo tipo de organizaciones."
             </p>
 
