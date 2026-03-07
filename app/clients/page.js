@@ -9,7 +9,7 @@ const Clients = () => {
         { id: 5, src: '/Caballero.png', alt: 'Caballero', scale: 'scale-125', link: 'https://www.caballeroescribanos.com/' },
         { id: 6, src: '/Havanatur.png', alt: 'Havanatur', scale: 'scale-125', link: 'https://www.havanatur.com.ar/' },
         { id: 7, src: '/Fusion.png', alt: 'Fusion2', scale: 'scale-125', link: 'https://www.instagram.com/fusionvisual_oficial?igsh=MWRkYXFxcXBhNnp4Mw==' },
-        { id: 8, src: '/Libros.jpg', alt: 'Libros', scale: 'scale-100', link: 'https://www.instagram.com/biblioflorenciosanchez?igsh=bHdiYXZvaWZuc3lm' },
+        { id: 8, src: '/libros.jpg', alt: 'Libros', scale: 'scale-100', link: 'https://www.instagram.com/biblioflorenciosanchez?igsh=bHdiYXZvaWZuc3lm' },
 
     ];
 

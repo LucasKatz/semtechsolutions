@@ -82,7 +82,11 @@ const Navbar = () => {
                         setIsMenuOpen(!isMenuOpen);
                     }}
                 >
-                    <span className="bg-purple-900">Menu</span>
+                    <button className="flex flex-col gap-1.5 p-2 bg-transparent border-2 border-white rounded-md">
+                        <span className="block w-8 h-1 bg-white"></span>
+                        <span className="block w-8 h-1 bg-white"></span>
+                        <span className="block w-8 h-1 bg-white"></span>
+                    </button>
                 </a>
             </div>
 

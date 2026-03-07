@@ -1,7 +1,7 @@
-:HL["/_next/static/chunks/30419f93e4e31d65.css","style"]
+:HL["/_next/static/chunks/21cd84f943d0b365.css","style"]
 :HL["/_next/static/chunks/45042b2edb02f2ea.css","style"]
 :HL["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css","style"]
-:HL["/semtech.png","image"]
+:HL["/semtech2.jpeg","image"]
 :HL["/Puma.png","image"]
 :HL["/Shell.png","image"]
 :HL["/YPF.png","image"]
@@ -9,5 +9,5 @@
 :HL["/Caballero.png","image"]
 :HL["/Havanatur.png","image"]
 :HL["/Fusion.png","image"]
-:HL["/Libros.jpg","image"]
-0:{"buildId":"v03uHfF1urn5ub5VhGvQ0","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+:HL["/libros.jpg","image"]
+0:{"buildId":"9TiTHuzVcs7_-VflKVUy9","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":true},"staleTime":300}

@@ -18,7 +18,7 @@ const About = () => {
               <div className="aspect-[4/5] md:aspect-video lg:aspect-[4/5] bg-[#23153c] relative flex items-center justify-center">
                 {/* ESPACIO PARA TU IMAGEN */}
                 <img
-                  src="/semtech.png"
+                  src="/semtech2.jpeg"
                   alt="Soluciones IT"
                   className="w-full h-full object-cover opacity-60 mix-blend-lighten group-hover:opacity-90 transition-opacity duration-500"
                 />
